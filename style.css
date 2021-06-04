@@ -1,0 +1,199 @@
+.grid-parent{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 30px 305px 305px;
+    gap: 5px;
+    width: 80%;
+    min-height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000;
+    padding: 5px;
+    background: gray;
+}
+.title{
+    text-align: center;
+    grid-column: span 2;
+    background: linen;
+    padding: 5px;
+}
+
+.box-one {
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 12fr;
+    gap: 5px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 5px;
+}
+
+.vbar-one{
+    background-color: thistle;
+    display: grid;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    grid-template-rows: 5fr 1fr;
+    gap: 5px;
+}
+
+.trybutton{
+    height: 20px;
+    width: 90px;
+    border-radius: 5px;
+}
+
+.ebutton{
+    min-height: 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.box-two {
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 9.5fr 1.5fr;
+    gap: 5px;
+}
+.title-two{
+    
+    color: tomato;
+    padding: 5px;
+    background-color: linen;
+    
+}
+
+.v {
+    width: 300px;
+    height:12px;
+    margin: 5px auto;
+    background-color:#00bfb6;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: arial;
+    position: relative;
+  }
+  
+  .vv:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #00bfb6;
+    border-top: 10px solid #00bfb6;
+    border-bottom: 10px solid transparent;
+    left: -19px;
+    top: 6px;
+  }
+  
+  
+.graph{
+    background-color: turquoise;
+    text-align: center;
+    padding: 80px;
+}
+
+.buttonnext{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.buttonexplore{
+    background-color: yellowgreen;
+    border-radius: 5px;
+}
+
+.box-three {
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 12fr;
+    gap: 5px;
+}
+
+.content-three{
+    display: grid;
+    grid-template-columns: 2fr 2fr 6fr;
+    gap: 5px;
+}
+
+
+.vbar-two{
+    background-color: thistle;
+    display: grid;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    grid-template-rows: 5fr 1fr;
+}
+
+.vbar-three{
+    background-color: thistle;
+    display: grid;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    grid-template-rows: 5fr 1fr;
+}
+
+.box-four {
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-rows: 1fr 10.5fr 1.5fr;
+    gap: 10px;
+}
+
+.title-four{
+    text-align: center;
+    padding: 5px;
+    background-color: linen;
+}
+
+
+SELECT, INPUT[type="text"] {
+    width: 100px;
+    height: 150px;
+    box-sizing: border-box;
+}
+/* It controls every selection box. */
+
+SECTION {
+    padding: 8px;
+    background-color: #f0f0f0;
+    overflow: auto;
+}
+SECTION > DIV {
+    float: left;
+    padding: 4px;
+}
+SECTION > DIV + DIV {
+    width: 40px;
+    text-align: center;
+}
+
+.bottom{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.resetbutton{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.submitbutton{
+    background-color: tomato;
+    border-radius: 5px;
+}

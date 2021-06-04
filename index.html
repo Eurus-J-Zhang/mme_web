@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" href="style.css">
+        <link rel="shortcut icon" href="#">
+        <title>CSS Position</title>
+        <style>
+        </style>
+        
+    </head>
+    <body>     
+        <div class="grid-parent">
+            <div class = "title">"Modelling Made Easy" User Experiment</div>
+            <div class = "box-one">
+                <div class = "title-four">Variable exploration</div>
+                <div class = "content">
+                    <div class="vbar-one">
+                        <select id="variable-one" size=8 >
+                            <option value="X1">X1</option>
+                            <option value="X2">X2</option>
+                            <option value="X3">X3</option>
+                            <option value="X4">X4</option>
+                            <option value="X5">X5</option>
+                            <option value="X6">X6</option>
+                            <option value="X7">X7</option>
+                            <option value="X8">X8</option>
+                        </select>
+                        <button class ="trybutton" id="trybuttonone">Try it</button>
+                    </div>
+                    <div id="chart-container"></div>
+                </div>
+            </div>
+           
+            <div class = "box-two">
+                <div class = "title-two"><b>Assistance advice</b></div>
+                <div class = "v vv">"Variable X5 review recommended"</div>
+                <div class = "graph">/here would be a graph/</div>
+                <div class = "bottom">
+                    <button class = "buttonnext">Try another suggestion</button>
+                    <button class = "buttonexplore">Explore</button>
+                </div>
+            </div>
+            
+            <div class = "box-three">
+                <div class = "title-four">Variable Correlation Exploration</div>
+                    <div class = "content-three">
+                        <div class="vbar-two">
+                            <select id="variable-two" size=8 >
+                                <option value="X1">X1</option>
+                                <option value="X2">X2</option>
+                                <option value="X3">X3</option>
+                                <option value="X4">X4</option>
+                                <option value="X5">X5</option>
+                                <option value="X6">X6</option>
+                                <option value="X7">X7</option>
+                                <option value="X8">X8</option>
+                            </select>
+                            <!-- <button class="trybutton" id="trybuttontwo">Try it</button> -->
+                        </div>
+                        
+                        <div class="vbar-three">
+                            <select id="variable-three" size=8 >
+                                <option value="X1">X1</option>
+                                <option value="X2">X2</option>
+                                <option value="X3">X3</option>
+                                <option value="X4">X4</option>
+                                <option value="X5">X5</option>
+                                <option value="X6">X6</option>
+                                <option value="X7">X7</option>
+                                <option value="X8">X8</option>
+                            </select>
+                            <button class="trybutton" id="trybuttonthree">Try it</button>
+                        </div>
+                    <div>
+                        <div id="chart-container-two"></div>
+                    </div>        
+
+                    
+                </div>
+            </div>
+
+            <div class = "box-four">
+        
+                <div class = "title-four">Model Selection</div>
+                    <section class="container">
+                        <div>
+                            <select id="leftValues" size="5" multiple></select>
+                        </div>
+                        <div>
+                            <input type="button" id="btnLeft" value="&lt;&lt;" />
+                            <input type="button" id="btnRight" value="&gt;&gt;" />
+                        </div>
+                        <div>
+                            <select id="rightValues" size="4" multiple>
+                                <option>X1</option>
+                                <option>X2</option>
+                                <option>X3</option>
+                                <option>X4</option>
+                                <option>X5</option>
+                                <option>X6</option>
+                                <option>X7</option>
+                                <option>X8</option>
+                            </select>
+
+                        </div>
+                    </section>
+
+                <div class = "bottom">
+                    <button class = "resetbutton">Reset</button>
+                    <button class = "submitbutton">Submit</button>
+                </div>
+                
+            </div>
+        </div>
+           
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+
