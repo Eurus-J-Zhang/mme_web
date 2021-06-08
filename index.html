@@ -12,7 +12,8 @@
         <div class="grid-parent">
             <div class = "title">"Modelling Made Easy" User Experiment</div>
             <div class = "box-one">
-                <div class = "title-four">Variable exploration</div>
+                <div class = "subtitle">Variable exploration</div>
+                <div class = "note">Note: This session is for exploring the variables.</div>
                 <div class = "content">
                     <div class="vbar-one">
                         <select id="variable-one" size=8 >
@@ -33,19 +34,22 @@
            
             <div class = "box-two">
                 <div class = "title-two"><b>Assistance advice</b></div>
+                <div class = "note">Note: This session is for showing recommendations from AI.</div>
                 <div class = "v vv">"Variable X5 review recommended"</div>
                 <div class = "graph">/here would be a graph/</div>
+                
                 <div class = "bottom">
-                    <button class = "buttonnext">Try another suggestion</button>
+                     <button class = "buttonnext">Try another suggestion</button> 
                     <button class = "buttonexplore">Explore</button>
                 </div>
             </div>
             
             <div class = "box-three">
-                <div class = "title-four">Variable Correlation Exploration</div>
+                <div class = "subtitle">Variable Correlation Exploration</div>
+                <div class = "note">Note: This session is for exploring the relationship between two variables.</div>
                     <div class = "content-three">
                         <div class="vbar-two">
-                            <select id="variable-two" size=8 >
+                            <select id="variable-two" size=8 style="width:80px;">
                                 <option value="X1">X1</option>
                                 <option value="X2">X2</option>
                                 <option value="X3">X3</option>
@@ -55,11 +59,11 @@
                                 <option value="X7">X7</option>
                                 <option value="X8">X8</option>
                             </select>
-                            <!-- <button class="trybutton" id="trybuttontwo">Try it</button> -->
+                            
                         </div>
                         
                         <div class="vbar-three">
-                            <select id="variable-three" size=8 >
+                            <select id="variable-three" size=8 style="width:80px;">
                                 <option value="X1">X1</option>
                                 <option value="X2">X2</option>
                                 <option value="X3">X3</option>
@@ -81,7 +85,8 @@
 
             <div class = "box-four">
         
-                <div class = "title-four">Model Selection</div>
+                <div class = "subtitle">Model Selection</div>
+                <div class = "note">Note: Please choose the proper variables to be included in the model to the left box.</div>
                     <section class="container">
                         <div>
                             <select id="leftValues" size="5" multiple></select>
@@ -106,7 +111,7 @@
                     </section>
 
                 <div class = "bottom">
-                    <button class = "resetbutton">Reset</button>
+                    <button class = "resetbutton">Get feedback from AI</button>
                     <button class = "submitbutton">Submit</button>
                 </div>
                 

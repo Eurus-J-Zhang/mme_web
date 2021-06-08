@@ -1,6 +1,4 @@
 
-// document.addEventListener("DOMContentLoaded", function() {
-
 
     document.querySelector(".submitbutton").addEventListener('click',function(){
         const values = $('#leftValues').val();
@@ -18,10 +16,6 @@
         $("#rightValues").append(selectedItem);
     });
     
-    // $("#rightValues").change(function () {
-    //     var selectedItem = $("#rightValues option:selected");
-    //     $("#txtRight").val(selectedItem.text());
-    // });
 
 
     let m1,m2,n=[],
@@ -56,7 +50,7 @@
         return data;
     };
 
-function createChart(data, containerId){
+function createChart(data, containerId, xID, yID){
     var container = document.getElementById(containerId);
     container.innerHTML = '';
     var canvas = document.createElement('canvas');
@@ -65,12 +59,27 @@ function createChart(data, containerId){
         type: 'scatter',
         data: {     
             datasets: [{
-                label: 'Scatter Dataset',
+                label: 'Dataset',
                 data: data,
+
             }]
         },
         options: {
-        }
+            scales:{
+                xAxes:[{
+                    scaleLabel: {
+                      display: true,
+                      labelString: xID,
+                    }
+                }],
+                yAxes:[{
+                    scaleLabel: {
+                      display: true,
+                      labelString: yID
+                    }
+                }]
+            }
+        }   
     });
 }
 
@@ -79,22 +88,11 @@ var ctxone = document.getElementById('myChartone');
 var ctxtwo = document.getElementById('myCharttwo');
 
 
-// var myCharttwo = new Chart(ctxtwo, {
-//     type: 'scatter',
-//     data: {     
-//         datasets: [{
-//             label: 'Scatter Dataset',
-//             data: datapairxx,
-//         }]
-//     },
-//     options: {
-//     }
-// });
-
 document.querySelector("#trybuttonone").addEventListener('click',function(){
     const userSelectedX = document.getElementById("variable-one").value;
     const myData = generateDataPairFromX(allData[userSelectedX], n);
-    const myChart = createChart(myData, 'chart-container');
+    // const myChart = createChart(myData, 'chart-container');
+    const myChart = createChart(myData, 'chart-container', userSelectedX, 'Y');
     console.log('ready :)');
 })
 
@@ -104,7 +102,8 @@ document.querySelector("#trybuttonthree").addEventListener('click',function(){
     const userSelectedXleft = document.getElementById("variable-two").value;
     const userSelectedXbottom = document.getElementById("variable-three").value;
     const myDataTwo = generateDataPairFromX(allData[userSelectedXbottom],allData[userSelectedXleft]);
-    const myChartTwo = createChart(myDataTwo, 'chart-container-two');
+    // const myChartTwo = createChart(myDataTwo, 'chart-container-two');
+    const myChartTwo = createChart(myDataTwo, 'chart-container-two',userSelectedXbottom, userSelectedXleft);
     console.log('ready :)');
 })
 
@@ -121,9 +120,3 @@ fetch("./data.json")
 
         allData = data;
     });
-
-
-    
-
-
-// })
