@@ -13,11 +13,15 @@
     padding: 5px;
     background: gray;
 }
+
 .title{
     text-align: center;
-    grid-column: span 2;
+    /* grid-column: span 2; */
+    display: grid;
+    /* grid-template-columns: 6fr 4fr; */
     background: linen;
     padding: 5px;
+    gap: 5px;
 }
 
 .box-one {
